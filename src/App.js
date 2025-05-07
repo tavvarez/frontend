@@ -72,6 +72,7 @@ function App() {
       {resultado && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <Typography variant="h6" align="center" style={{ marginTop: '30px' }}>
+          {loading && <p>Carregando...</p>}
             Resultado: {resultado}
           </Typography>
         </motion.div>
