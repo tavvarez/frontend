@@ -27,7 +27,6 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
     setSnackbarOpen(true);
     try {
       const response = await fetch('https://fretex-api-c5ezcebebshaaxbu.eastus2-01.azurewebsites.net/predict', {
@@ -46,7 +45,6 @@ function App() {
     } catch (error) {
       setResultado('Erro ao conectar na API.');
     } finally {
-      setLoading(false);
       setSnackbarOpen(false);
     }
   };
