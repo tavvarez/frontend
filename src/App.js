@@ -19,7 +19,6 @@ function App() {
   });
 
   const [resultado, setResultado] = useState('');
-  // const [loading, setLoading] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const handleChange = (e) => {
